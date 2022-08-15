@@ -20,7 +20,7 @@ body {
     position: absolute;
     height: 225px;
     width: 225px;
-    border: dashed 3px rgb(54, 54, 54);
+    border: dotted 2px rgb(54, 54, 54);
     border-radius: 115px;
     top: 35px;
     left: 35px;
@@ -37,7 +37,7 @@ body {
     background-color: yellow;
     left: 149px;
     bottom: 149px;
-    opacity: 50%;
+    opacity: 100%;
     transform-origin: 0 100%;
     box-shadow: 0 0 10px rgb(255, 255, 163);
 
