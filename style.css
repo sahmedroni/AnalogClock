@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 body {
     background-color: rgb(40, 1, 48);
     display: flex;
@@ -10,30 +11,47 @@ body {
     position: absolute;
     height: 300px;
     width: 300px;
-    border: solid 5px white;
-    border-radius: 150px;
+    border: solid 1px rgb(12, 0, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(255, 11, 243);
+}
+#clock-in {
+    position: absolute;
+    height: 225px;
+    width: 225px;
+    border: dashed 3px rgb(54, 54, 54);
+    border-radius: 115px;
+    top: 35px;
+    left: 35px;
+    transform: translate(0%);
+    box-shadow: 0 0 10px rgb(156, 25, 150);
+
+    
 }
 
 #second {
     position: absolute;
-    height: 130px;
-    width: 2px;
+    height: 115px;
+    width: 1px;
     background-color: yellow;
     left: 149px;
     bottom: 149px;
     opacity: 50%;
     transform-origin: 0 100%;
+    box-shadow: 0 0 10px rgb(255, 255, 163);
 
 }
 #minute {
     position: absolute;
-    height: 100px;
-    width: 2px;
+    height: 95px;
+    width: 3px;
     background-color: rgb(21, 252, 0);
     left: 149px;
     bottom: 149px;
     opacity: 50%;
     transform-origin: 0 100%;
+    box-shadow: 1px 1px 10px rgb(147, 255, 137);
+    border-radius: 10px;
 
 }
 #hour {
@@ -45,6 +63,8 @@ body {
     bottom: 150px;
     opacity: 50%;
     transform-origin: 0 100%;
+    box-shadow: 0 0 20px rgb(252, 0, 231);
+    border-radius: 10px;
 
 }
 #circle {
@@ -56,4 +76,46 @@ body {
     left: 140px;
     bottom: 140px;
     
+}
+.twelve, .six, .three, .nine {
+    position: absolute;
+    
+    font-size: 35px;
+    font-weight:bold;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+   
+    
+}
+
+.twelve {
+    left: 150px;
+    top: 0;
+    transform: translate(-50%);
+    text-shadow: 0 0 15px rgb(253, 98, 245);
+    color:rgb(255, 217, 0);
+    
+}
+
+.six {
+    left: 150px;
+    bottom: -4px;
+    transform: translate(-50%);
+    text-shadow: 0 0 15px rgb(253, 98, 245);
+    color:rgb(255, 217, 0);
+}
+.three {
+    right: 8px;
+    top: 150px;
+    transform: translateY(-50%);
+    text-shadow: 0 0 15px rgb(188, 255, 134);
+    color:rgb(140, 255, 8);
+}
+.nine {
+    left: 8px;
+    top: 150px;
+    transform: translateY(-50%);
+    text-shadow: 0 0 15px rgb(188, 255, 134);
+    color:rgb(140, 255, 8);
 }
