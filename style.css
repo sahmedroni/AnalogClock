@@ -14,7 +14,10 @@ body {
     width: 300px;
     border: solid 1px rgb(12, 0, 0);
     border-radius: 50%;
-    box-shadow: 0 0 20px rgb(255, 11, 243);
+    background-image: linear-gradient(to top,rgb(12, 0, 0) 30%, rgb(156, 25, 150)) ;
+    z-index: -1;
+
+    box-shadow: 0 0 120px rgb(255, 11, 243);
 }
 #clock-in {
     position: absolute;
@@ -25,9 +28,9 @@ body {
     top: 35px;
     left: 35px;
     transform: translate(0%);
-    box-shadow: 0 0 10px rgb(156, 25, 150);
-
-    
+    background-color: rgb(12, 0, 0);
+    z-index: -1;
+    box-shadow: 0 0 10px rgb(156, 25, 150);    
 }
 
 #second {
@@ -40,7 +43,6 @@ body {
     opacity: 100%;
     transform-origin: 0 100%;
     box-shadow: 0 0 10px rgb(255, 255, 163);
-
 }
 #minute {
     position: absolute;
@@ -53,7 +55,6 @@ body {
     transform-origin: 0 100%;
     box-shadow: 1px 1px 10px rgb(147, 255, 137);
     border-radius: 10px;
-
 }
 #hour {
     position: absolute;
@@ -66,7 +67,6 @@ body {
     transform-origin: 0 100%;
     box-shadow: 0 0 20px rgb(252, 0, 231);
     border-radius: 10px;
-
 }
 #circle {
     position: absolute;
@@ -75,8 +75,7 @@ body {
     width: 20px;
     border-radius: 50%;
     left: 140px;
-    bottom: 140px;
-    
+    bottom: 140px;   
 }
 .twelve, .six, .three, .nine {
     position: absolute;
@@ -86,8 +85,6 @@ body {
     margin: 0;
     border: 0;
     font-family: 'Roboto', sans-serif;
-   
-    
 }
 
 .twelve {
